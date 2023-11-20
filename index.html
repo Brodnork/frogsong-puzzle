@@ -1,1 +1,76 @@
-<h1>swag</h1>
+<!DOCTYPE html>
+	<html lang="en">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+	<title>F R O G S O N G</title>
+	<link rel="stylesheet" href="style.css">
+    <style>
+        body  {
+        min-width: 1916px;
+        max-width: 1916px;
+        max-height: 988px;
+          background-image: url("herbBG.png");
+          background-color: #000000;
+        }
+        @font-face{
+  font-family: "Gaegu";
+  src: "https://fonts.googleapis.com";
+}
+@media {
+  input[type="checkbox"] {
+    content: url('herbTrans.png');
+    appearance: none;
+    display: block;
+    width: 370px;
+    height: 247px;
+    position: relative;
+    bottom: -320px;
+    right: -1020px;
+    cursor: pointer;
+  }
+
+  input[type="checkbox"]:checked {
+    content: url('herb.gif');
+  }
+  p {
+    
+    width: 12em;
+    height: 3em;
+    position: relative;
+    bottom: -300px;
+    right: -48%;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    font-size: 3em;
+    background-image: url("dialoguebox.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family:'Gaegu'
+
+   
+  }
+    </style>
+</head>
+<body>
+    
+
+<script>
+  function showWormText() {
+    var checkBox = document.getElementById("herb");
+    var text = document.getElementById("text");
+    if (checkBox.checked == true) {
+      text.style.display = "block";
+    } else {
+      text.style.display = "none";
+    }
+  }
+  window.onload = () => {
+    showWormText();
+  };
+</script>
+    <input type="checkbox" id="herb" onclick="showWormText()" checked="true" >
+    <p id="text" >Will bring worms...?<br>🪱</p>
+</body>

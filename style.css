@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@700&display=swap');
+html {
+	
+}
+@font-face{
+  font-family: "Gaegu";
+  src: "https://fonts.googleapis.com";
+}
+@media (min-width: 800px) {
+  input[type="checkbox"] {
+    content: url('herbTrans.png');
+    appearance: none;
+    display: block;
+    width: 150px;
+    height: 150px;
+  }
+
+  input[type="checkbox"]:checked {
+    content: url('herb.gif');
+  }
+
+}
