@@ -12,13 +12,14 @@
         max-height: 988px;
           background-image: url("herbBG.png");
           background-color: #000000;
+          background-repeat: no-repeat;
         }
         @font-face{
   font-family: "Gaegu";
   src: "https://fonts.googleapis.com";
 }
 @media {
-  input[type="checkbox"] {
+  input[type="checkbox"]:checked  {
     content: url('herbTrans.png');
     appearance: none;
     display: block;
@@ -30,8 +31,16 @@
     cursor: pointer;
   }
 
-  input[type="checkbox"]:checked {
+  input[type="checkbox"]{
     content: url('herb.gif');
+    appearance: none;
+    display: block;
+    width: 370px;
+    height: 247px;
+    position: relative;
+    bottom: -320px;
+    right: -1020px;
+    cursor: pointer;
   }
   p {
     
@@ -49,8 +58,6 @@
     background-repeat: no-repeat;
     background-position: center;
     font-family:'Gaegu'
-
-   
   }
     </style>
 </head>
@@ -61,13 +68,15 @@
   function showWormText() {
     var checkBox = document.getElementById("herb");
     var text = document.getElementById("text");
-    if (checkBox.checked == true) {
+    if (checkBox.checked == false) {
       text.style.display = "block";
     } else {
       text.style.display = "none";
     }
   }
-
+  window.onload = () => {
+    showWormText();
+  };
 </script>
     <input type="checkbox" id="herb" onclick="showWormText()" checked="false" >
     <p id="text" >Will bring worms...?<br>🪱</p>
