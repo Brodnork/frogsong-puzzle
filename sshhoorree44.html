@@ -3,14 +3,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <head>
-	<title>FEED 15</title>
-	<link rel="stylesheet" href="style.css">
+	<title>FROGSONG</title>
+	
     <style>
         body  {
         min-width: 1916px;
         max-width: 1916px;
         max-height: 988px;
-          background-image: url("herbBGdoor.png");
+          background-image: url("shore4BG.png");
           background-color: #000000;
           background-repeat: no-repeat;
         }
@@ -20,43 +20,78 @@
 }
 @media {
   input[type="checkbox"]:checked  {
-    content: url('herbTrans.png');
+    
     appearance: none;
     display: block;
-    width: 370px;
-    height: 247px;
+    width: 88px;
+    height: 58px;
     position: relative;
-    bottom: -320px;
-    right: -1020px;
+    bottom: -465px;
+    right: -535px;
     cursor: pointer;
   }
 
   input[type="checkbox"]{
-    content: url('herb.gif');
+    
     appearance: none;
     display: block;
-    width: 370px;
-    height: 247px;
-    position: relative;
-    bottom: -320px;
-    right: -1020px;
     cursor: pointer;
+    width: 88px;
+    height: 58px;
+    position: relative;
+    bottom: -465px;
+    right: -535px;
   }
   p {
-    
-    width: 12em;
-    height: 3em;
+
+    height: 4em;
     position: relative;
-    bottom: -300px;
-    right: -48%;
+    bottom: -150px;
+    right: 10%;
     text-align: center;
     color: white;
     font-size: 3em;
-    background-image: url("dialoguebox.png");
+    background-image: url("pass.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     font-family:'Gaegu'
+  }
+  img {
+    height: 1.3em;
+    position: relative;
+    bottom: 150px;
+    right: -30%;
+    text-align: center;
+    color: white;
+    font-size: 3em;
+    background-image: url("pass.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family:'Gaegu'
+    }
+  .toHerb {
+    width: 350px;
+    padding: 50px;
+    margin: 20px;
+    position: relative;
+    bottom: -425px;
+    right: -85%;
+    cursor: pointer;
+    background-color: black;
+    opacity: 0%;
+  }
+  .toMore {
+    width: 350px;
+    padding: 50px;
+    margin: 20px;
+    position: relative;
+    bottom: -550px;
+    right: 7%;
+    cursor: pointer;
+    background-color: black;
+    opacity: 0%;
   }
     </style>
 </head>
@@ -77,6 +112,8 @@
     showWormText();
   };
 </script>
+    <a href="https://frogpuzzle.net" class="toHerb"></a>
+    <a href="llllllllllll.html" class="toMore"></a>
     <input type="checkbox" id="herb" onclick="showWormText()" checked="false" >
-    <p id="text" >Will bring worms...?<br>🪱</p>
+    <p id="text" ><img src="map.png"></p>
 </body>

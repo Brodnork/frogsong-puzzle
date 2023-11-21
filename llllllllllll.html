@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+	<title>F R O G S O N G</title>
+	<link rel="stylesheet" href="style.css">
+    <style>
+        body  {
+            background-image: url("BOREALABG.png");
+          background-color: #000000;
+          background-repeat: no-repeat;
+        }
+        img{
+            cursor: pointer;
+            filter: drop-shadow(20px 20px 200px black);
+            
+        }
+        img:hover{
+            cursor: pointer;
+            filter: contrast(120%);
+        }
+        center{
+            padding-top: 15%;
+        }
+        a{
+            color: white;
+            font-family:'Gaegu';
+            font-size: 3em;
+            text-decoration: none;
+            background-image: url("doorClosed.gf");
+        }
+        a:hover{
+            color: yellow;
+            font-family:'Gaegu';
+            font-size: 3em;
+            text-decoration: none;
+        }
+        a img.hover {
+            display: none;
+            }
+            a img.default {
+            display: inherit;
+            }
+            a:hover img.hover {
+            display: inherit;
+            }
+            a:hover img.default {
+            display: none;
+            }
+
+
+    </style>
+</head>
+<body>
+
+<script>
+    num1 = 1;
+    num2 = 1;
+    num3 = 1;
+    num4 = 1;
+    num5 = 1;
+    let link1 = "123";
+    let link2 = "456";
+    let link3 = "789";
+    let link4 = "123";
+    let link5 = "456";
+    let result = link1.concat(link2, link3, link4, link5);
+    
+
+    function changeImage() {
+    if (num1 == 1){
+        document.getElementById("imgClickAndChange").src = "rana.png";
+        num1 = 2
+        link1 = "_xKz"
+    }
+    else if(num1 == 2){
+        document.getElementById("imgClickAndChange").src = "basalt.png";
+        num1 = 3
+        link1 = "222"
+    }else if(num1 == 3){
+        document.getElementById("imgClickAndChange").src = "espo.png";
+        num1 = 4
+        link1 = "QwE"
+    }else if(num1 == 4){
+        document.getElementById("imgClickAndChange").src = "chorus.png";
+        num1 = 1
+        link1 = "123"
+        
+    }
+    result = link1.concat(link2, link3, link4, link5);
+    document.getElementById("link2").setAttribute("href",result);
+    }   
+
+    function changeImage2() {
+    if (num2 == 1){
+        document.getElementById("imgClickAndChange2").src = "rana.png";
+        num2 = 2
+        link2 = "POy"
+    }
+    else if(num2 == 2){
+        document.getElementById("imgClickAndChange2").src = "basalt.png";
+        num2 = 3
+        link2 = "7_7"
+    }else if(num2 == 3){
+        document.getElementById("imgClickAndChange2").src = "espo.png";
+        num2 = 4
+        link2 = "O_O"
+    }else if(num2 == 4){
+        document.getElementById("imgClickAndChange2").src = "chorus.png";
+        num2 = 1
+        link2 = "456"
+    }
+    result = link1.concat(link2, link3, link4, link5);
+    document.getElementById("link2").setAttribute("href",result);
+    }  
+
+    function changeImage3() {
+    if (num3 == 1){
+        document.getElementById("imgClickAndChange3").src = "rana.png";
+        num3 = 2
+        link3 = "zzz"
+    }
+    else if(num3 == 2){
+        document.getElementById("imgClickAndChange3").src = "basalt.png";
+        num3 = 3
+        link3 = "JK2"
+    }else if(num3 == 3){
+        document.getElementById("imgClickAndChange3").src = "espo.png";
+        num3 = 4
+        link3 = "kl5"
+    }else if(num3 == 4){
+        document.getElementById("imgClickAndChange3").src = "chorus.png";
+        num3 = 1
+        link3 = "789"
+    }
+    result = link1.concat(link2, link3, link4, link5);
+    document.getElementById("link2").setAttribute("href",result);
+    } 
+    function changeImage4() {
+    if (num4 == 1){
+        document.getElementById("imgClickAndChange4").src = "rana.png";
+        num4 = 2
+        link4 = "wee"
+    }
+    else if(num4 == 2){
+        document.getElementById("imgClickAndChange4").src = "basalt.png";
+        num4 = 3
+        link4 = "AAA"
+    }else if(num4 == 3){
+        document.getElementById("imgClickAndChange4").src = "espo.png";
+        num4 = 4
+        link4 = "gYG"
+    }else if(num4 == 4){
+        document.getElementById("imgClickAndChange4").src = "chorus.png";
+        num4 = 1
+        link4 = "123"
+    }
+    result = link1.concat(link2, link3, link4, link5);
+    document.getElementById("link2").setAttribute("href",result);
+    }
+    function changeImage5() {
+    if (num5 == 1){
+        document.getElementById("imgClickAndChange5").src = "rana.png";
+        num5 = 2
+        link5 = "000"
+    }
+    else if(num5 == 2){
+        document.getElementById("imgClickAndChange5").src = "basalt.png";
+        num5 = 3
+        link5 = "snn"
+    }else if(num5 == 3){
+        document.getElementById("imgClickAndChange5").src = "espo.png";
+        num5 = 4
+        link5 = "waa"
+    }else if(num5 == 4){
+        document.getElementById("imgClickAndChange5").src = "chorus.png";
+        num5 = 1
+        link5 = "456"
+    }
+    result = link1.concat(link2, link3, link4, link5);
+    document.getElementById("link2").setAttribute("href",result);
+    }
+
+</script>
+
+<center>
+    <img alt="" src="chorus.png" width="17%" id="imgClickAndChange" onclick="changeImage()"/>
+    <img alt="" src="chorus.png" width="17%" id="imgClickAndChange2" onclick="changeImage2()"/>
+    <img alt="" src="chorus.png" width="17%" id="imgClickAndChange3" onclick="changeImage3()"/>
+    <img alt="" src="chorus.png" width="17%" id="imgClickAndChange4" onclick="changeImage4()"/>
+    <img alt="" src="chorus.png" width="17%" id="imgClickAndChange5" onclick="changeImage5()"/>
+    <br><br><br><br><br>
+    <a id="link2" href="123456789123456"><img class="default" src="doorClosed.gif" width="10%"><img class="hover" src="door.gif" width="10%">
+</center>
+</body>
